@@ -1,4 +1,4 @@
-const DATA = {
+`const DATA = {
     about: {
         icon: '👤', title: 'Professional Summary', sub: 'Adding Value Through Technology & Education',
         html: `
