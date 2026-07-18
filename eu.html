@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fernando Quissanga | Professional Portfolio</title>
+    <meta name="description" content="Fernando Quissanga - Mobile Developer, Web Developer & Technical Educator with 7+ years of experience in technology, education, and digital marketing in Angola.">
+    <meta property="og:title" content="Fernando Quissanga | Interactive Portfolio">
+    <meta property="og:description" content="Technology, Education & Digital Marketing. Available for projects worldwide.">
+    <meta property="og:type" content="website">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/eucss.css">
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></div>
+
+    <div class="header">
+        <h1>FERNANDO QUISSANGA</h1>
+        <p class="subtitle">Android Developer · Web Developer · Technical Educator</p>
+        <div class="status-badge"><span class="status-dot"></span><span>Available for Projects Worldwide</span></div>
+        <p class="location">📍 <span id="current-place">About</span> · Luanda, Angola</p>
+    </div>
+
+    <div class="city-wrapper">
+        <div class="city-label">🏙️ Interactive Portfolio Map — Click the Buildings</div>
+        <div class="city" id="city">
+            <canvas id="rainCanvas"></canvas>
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="bird bird-1"></div>
+            <div class="bird bird-2"></div>
+            <div class="firefly ff-1"></div>
+            <div class="firefly ff-2"></div>
+            <div class="firefly ff-3"></div>
+            <div class="firefly ff-4"></div>
+
+            <div class="road-h">
+                <div class="crosswalk" style="left: 15%;"></div>
+                <div class="crosswalk" style="right: 15%; left: auto;"></div>
+                <div class="manhole manhole-1"></div>
+            </div>
+            <div class="road-v">
+                <div class="crosswalk-v" style="top: 15%;"></div>
+                <div class="crosswalk-v" style="bottom: 15%; top: auto;"></div>
+                <div class="manhole manhole-2"></div>
+            </div>
+
+            <div class="traffic-light">
+                <div class="tl-light tl-red"></div>
+                <div class="tl-light tl-green"></div>
+            </div>
+
+            <div class="fountain-3d">
+                <div class="fountain-base"></div>
+                <div class="fountain-pillar"></div>
+                <div class="fountain-top"></div>
+                <div class="water-jet"></div>
+                <div class="water-droplets">
+                    <div class="droplet"></div>
+                    <div class="droplet"></div>
+                    <div class="droplet"></div>
+                </div>
+                <div class="water-pool"></div>
+            </div>
+
+            <div class="lamp-post lamp-post-1"><div class="lamp-head"></div><div class="lamp-arm"></div><div class="lamp-pole"></div></div>
+            <div class="lamp-post lamp-post-2"><div class="lamp-head"></div><div class="lamp-arm"></div><div class="lamp-pole"></div></div>
+            <div class="bench bench-1"><div class="bench-seat"></div><div class="bench-leg-left"></div><div class="bench-leg-right"></div><div class="bench-back"></div></div>
+            <div class="bench bench-2"><div class="bench-seat"></div><div class="bench-leg-left"></div><div class="bench-leg-right"></div><div class="bench-back"></div></div>
+            <div class="tree-3d tree-3d-1"><div class="tree-crown"></div><div class="tree-trunk"></div></div>
+            <div class="tree-3d tree-3d-2"><div class="tree-crown"></div><div class="tree-trunk"></div></div>
+            <div class="bush bush-1"></div>
+            <div class="bush bush-2"></div>
+            <div class="bush bush-3"></div>
+
+            <div class="cafe">
+                <div class="cafe-sign">Café</div>
+                <div class="cafe-roof"></div>
+                <div class="cafe-body"><div class="cafe-door"></div></div>
+            </div>
+
+            <div class="flower-bed flower-bed-1">
+                <div class="flower-soil"></div>
+                <div class="flower-stem-1"></div>
+                <div class="flower-stem-2"></div>
+                <div class="flower-head-1"></div>
+                <div class="flower-head-2"></div>
+            </div>
+
+            <div class="car-container car-right"><div class="car-body"><div class="car-roof"></div><div class="car-window"></div><div class="car-chassis"></div><div class="car-wheel car-wheel-front"></div><div class="car-wheel car-wheel-back"></div><div class="car-headlight"></div></div></div>
+            <div class="car-container car-left"><div class="car-body" style="transform: scaleX(-1);"><div class="car-roof"></div><div class="car-window"></div><div class="car-chassis"></div><div class="car-wheel car-wheel-front"></div><div class="car-wheel car-wheel-back"></div><div class="car-headlight"></div></div></div>
+            <div class="car-container car-down"><div class="car-body" style="transform: rotate(90deg);"><div class="car-roof"></div><div class="car-window"></div><div class="car-chassis"></div><div class="car-wheel car-wheel-front"></div><div class="car-wheel car-wheel-back"></div><div class="car-headlight"></div></div></div>
+            <div class="car-container car-up"><div class="car-body" style="transform: rotate(-90deg);"><div class="car-roof"></div><div class="car-window"></div><div class="car-chassis"></div><div class="car-wheel car-wheel-front"></div><div class="car-wheel car-wheel-back"></div><div class="car-headlight"></div></div></div>
+
+            <div class="bus-container" title="GiraMais Bus">
+                <div class="bus-body">
+                    <div class="bus-window"></div>
+                    <div class="bus-stripe"></div>
+                    <div class="bus-label">GiraMais</div>
+                    <div class="bus-wheel bus-wheel-front"></div>
+                    <div class="bus-wheel bus-wheel-back"></div>
+                </div>
+            </div>
+
+            <div class="cyclist">
+                <div class="cyclist-head"></div>
+                <div class="cyclist-body"></div>
+                <div class="cyclist-wheel cyclist-wheel-f"></div>
+                <div class="cyclist-wheel cyclist-wheel-b"></div>
+            </div>
+
+            <div class="q q-tl">
+                <div class="b" id="about" onclick="moverPara('about')"><span class="i">👤</span><span class="l">About</span><span class="map-tooltip">About Me</span></div>
+                <div class="b" id="projects" onclick="moverPara('projects')"><span class="i">🚀</span><span class="l">Projects</span><span class="map-tooltip">Projects</span></div>
+            </div>
+            <div class="q q-tr">
+                <div class="b" id="skills" onclick="moverPara('skills')"><span class="i">📚</span><span class="l">Skills</span><span class="map-tooltip">Skills</span></div>
+                <div class="b" id="languages" onclick="moverPara('languages')"><span class="i">🌐</span><span class="l">Langs</span><span class="map-tooltip">Languages</span></div>
+            </div>
+            <div class="q q-bl">
+                <div class="b" id="exp" onclick="moverPara('exp')"><span class="i">💼</span><span class="l">Exp</span><span class="map-tooltip">Experience</span></div>
+                <div class="b" id="education" onclick="moverPara('education')"><span class="i">🎓</span><span class="l">Edu</span><span class="map-tooltip">Education</span></div>
+            </div>
+            <div class="q q-br">
+                <div class="b" id="contact" onclick="moverPara('contact')"><span class="i">📬</span><span class="l">Contact</span><span class="map-tooltip">Contact</span></div>
+                <div class="b" id="blog" onclick="moverPara('blog')"><span class="i">📝</span><span class="l">Blog</span><span class="map-tooltip">Blog</span></div>
+            </div>
+
+            <div class="shadow" id="shadow"></div>
+            <div class="char" id="char">🚶🏽</div>
+        </div>
+    </div>
+
+    <div class="ctrls">
+        <button class="btn" onclick="abrirEstrutura()"><i class="fas fa-map"></i> Site Map</button>
+        <button class="btn" onclick="voltarInicio()"><i class="fas fa-home"></i> Home</button>
+        <button class="btn" onclick="toggleChuva()" id="btnChuva"><i class="fas fa-cloud-rain"></i> Rain</button>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="fecharModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="m-head">
+                <button class="m-close" onclick="fecharModalDirect()">✕</button>
+                <span class="m-icon" id="mIcon">👤</span>
+                <h2 class="m-title" id="mTitle">About</h2>
+                <p class="m-sub" id="mSub">Professional Summary</p>
+            </div>
+            <div class="m-body" id="mBody"></div>
+        </div>
+    </div>
+
+    <script src="js/eujs.js"></script>
+</body>
+</html>
