@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Fernando Quissanga | Professional Portfolio</title>
     <meta name="description" content="Fernando Quissanga - Mobile Developer, Web Developer & Technical Educator with 7+ years of experience in technology, education, and digital marketing in Angola.">
     <meta property="og:title" content="Fernando Quissanga | Interactive Portfolio">
-    <meta property="og:description" content="Technology, Education & Digital Marketing. Available for projects worldwide.">
+    <meta property="og:description" content="Technology, Education & Digital Marketing.">
     <meta property="og:type" content="website">
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/eucss.css">
+    
+    
+
 </head>
 <body>
+
+    <!-- TOGGLE TEMA -->
     <div class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></div>
 
+    <!-- BACK TO TOP -->
+    <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        <div class="toast-icon"><i class="fas fa-check"></i></div>
+        <span id="toastMsg">Ação concluída!</span>
+    </div>
+
+    <!-- HEADER PREMIUM -->
     <div class="header">
+        <img src="img/eu.jpg" alt="Fernando Quissanga" class="header-avatar" onerror="this.style.display='none'">
         <h1>FERNANDO QUISSANGA</h1>
-        <p class="subtitle">Android Developer · Web Developer · Technical Educator</p>
-        <div class="status-badge"><span class="status-dot"></span><span>Available for Projects Worldwide</span></div>
+        <div class="header-social">
+            <a href="https://wa.me/244946269760" target="_blank" class="social-btn wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/fernando-quissanga-761b6b347" target="_blank" class="social-btn li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Nando-Kissanga" target="_blank" class="social-btn gh" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:nandokissanga@gmail.com" class="social-btn em" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
         <p class="location">📍 <span id="current-place">About</span> · Luanda, Angola</p>
     </div>
 
+    <!-- MAPA -->
     <div class="city-wrapper">
-        <div class="city-label">🏙️ Interactive Portfolio Map — Click the Buildings</div>
+        <div class="city-label">🏙️ Interactive Portfolio Map</div>
         <div class="city" id="city">
             <canvas id="rainCanvas"></canvas>
             <div class="cloud cloud-1"></div>
@@ -89,6 +114,7 @@
                 <div class="flower-head-2"></div>
             </div>
 
+            <!-- Veículos com faixas responsivas -->
             <div class="car-container car-right"><div class="car-body"><div class="car-roof"></div><div class="car-window"></div><div class="car-chassis"></div><div class="car-wheel car-wheel-front"></div><div class="car-wheel car-wheel-back"></div><div class="car-headlight"></div></div></div>
             <div class="car-container car-left"><div class="car-body" style="transform: scaleX(-1);"><div class="car-roof"></div><div class="car-window"></div><div class="car-chassis"></div><div class="car-wheel car-wheel-front"></div><div class="car-wheel car-wheel-back"></div><div class="car-headlight"></div></div></div>
             <div class="car-container car-down"><div class="car-body" style="transform: rotate(90deg);"><div class="car-roof"></div><div class="car-window"></div><div class="car-chassis"></div><div class="car-wheel car-wheel-front"></div><div class="car-wheel car-wheel-back"></div><div class="car-headlight"></div></div></div>
@@ -141,6 +167,7 @@
 
     <div class="overlay" id="overlay" onclick="fecharModal(event)">
         <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-progress" id="modalProgress"></div>
             <div class="m-head">
                 <button class="m-close" onclick="fecharModalDirect()">✕</button>
                 <span class="m-icon" id="mIcon">👤</span>
@@ -150,7 +177,9 @@
             <div class="m-body" id="mBody"></div>
         </div>
     </div>
+    
+        <script src="js/eujs.js"></script>
 
-    <script src="js/eujs.js"></script>
+
 </body>
 </html>
