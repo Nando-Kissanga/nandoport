@@ -1,29 +1,43 @@
      const DATA = {
-     about: {
-     icon: '👤', title: 'Professional Summary', sub: 'Adding Value Through Technology & Education',
-     html: `
-     <div class="highlight-box">
-     <p class="txt" style="margin:0; font-weight:600; color:var(--text);">
-     "Multidisciplinary professional bridging technology, education, and digital marketing. 
-     Proven ability to manage large-scale projects (GiraMais/ENBI) while delivering high-quality 
-     software solutions and impactful training."
-     </p>
-     </div>
-     <p class="txt">I'm <strong>Fernando Quissanga</strong>, a <strong>Computer Engineering student (3rd Year)</strong> 
-     with <strong>7+ years of hands-on experience</strong> across multiple disciplines.</p>
-     <div class="stats">
-     <div class="stat"><span class="stat-n">7+</span><span class="stat-l">Years Exp.</span></div>
-     <div class="stat"><span class="stat-n">B2/C1</span><span class="stat-l">English</span></div>
-     <div class="stat"><span class="stat-n">ENBI</span><span class="stat-l">GiraMais</span></div>
-     <div class="stat"><span class="stat-n">3</span><span class="stat-l">Key Areas</span></div>
-     </div>
-     <p class="txt" style="font-weight:700; color:var(--primary);">
-     🎯 <strong>Target Roles:</strong><br>
-     📱 Android Developer | 🌐 Front-End Web Developer | 👨‍🏫 Technical Educator (Physics, English & Programming)<br>
-     📊 Digital Marketing (Copywriting)
-     </p>
-     `
-     },
+about: {
+  icon: '👤',
+  title: 'Professional Summary',
+  sub: 'Adding Value Through Technology & Education',
+  html: `
+    <div class="highlight-box">
+      <img src="img/eu.jpg"
+           alt="Fernando Quissanga"
+           style="width:100px; height:100px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 15px;">
+
+      <p class="txt" style="margin:0; font-weight:600; color:var(--text);">
+      "Multidisciplinary professional bridging technology, education, and digital marketing.
+      Proven ability to manage large-scale projects (GiraMais/ENBI) while delivering high-quality
+      software solutions and impactful training."
+      </p>
+    </div>
+
+    <p class="txt">
+      I'm <strong>Fernando Quissanga</strong>, a
+      <strong>Computer Engineering student (3rd Year)</strong>
+      with <strong>7+ years of hands-on experience</strong> across multiple disciplines.
+    </p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat-n">7+</span><span class="stat-l">Years Exp.</span></div>
+      <div class="stat"><span class="stat-n">B2/C1</span><span class="stat-l">English</span></div>
+      <div class="stat"><span class="stat-n">ENBI</span><span class="stat-l">GiraMais</span></div>
+      <div class="stat"><span class="stat-n">3</span><span class="stat-l">Key Areas</span></div>
+    </div>
+
+    <p class="txt" style="font-weight:700; color:var(--primary);">
+      🎯 <strong>Target Roles:</strong><br>
+      📱 Android Developer | 🌐 Front-End Web Developer |
+      👨‍🏫 Technical Educator (Physics, English & Programming) |
+      📊 Digital Marketing (Copywriting)
+    </p>
+  `
+},
+          
      projects: {
      icon: '🚀', title: 'Key Projects', sub: 'Real-World Impact',
      html: `
