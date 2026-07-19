@@ -5,7 +5,7 @@ about: {
   sub: 'Adding Value Through Technology & Education',
   html: `
     <div class="highlight-box">
-      <img src="https://github.com/Nando-Kissanga/nandoport/blob/897af9f485cc925c0bfb96ae02c0061f05862eeb/Img/eu.png"
+      <img src="nandoport/Img/eu.png"
            alt="Fernando Quissanga"
            style="width:100px; height:100px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 15px;">
 
