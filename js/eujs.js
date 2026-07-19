@@ -5,7 +5,7 @@ about: {
   sub: 'Adding Value Through Technology & Education',
   html: `
     <div class="highlight-box">
-      <img src="img/eu.jpg"
+      <img src="img/eu.png"
            alt="Fernando Quissanga"
            style="width:100px; height:100px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 15px;">
 
