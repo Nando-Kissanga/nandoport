@@ -6,9 +6,10 @@
   sub: 'Adding Value Through Technology & Education',
   html: `
     <div class="highlight-box">
-      <img src="https://raw.githubusercontent.com/Nando-Kissanga/nandoport/897af9f485cc925c0bfb96ae02c0061f05862eeb/Img/eu.png" 
+     <img src="./Img/eu.png">
+      <!--img src="https://raw.githubusercontent.com/Nando-Kissanga/nandoport/897af9f485cc925c0bfb96ae02c0061f05862eeb/Img/eu.png" 
       	alt="Fernando Quissanga"
-           style="width:100px; height:100px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 15px;">
+           style="width:100px; height:100px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 15px;"-->
 
       <p class="txt" style="margin:0; font-weight:600; color:var(--text);">
       "Multidisciplinary professional bridging technology, education, and digital marketing.
